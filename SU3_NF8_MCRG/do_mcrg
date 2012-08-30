@@ -1,0 +1,27 @@
+#!/bin/csh -f
+
+set count = $1
+set last = $2
+set beta = $3
+set beta_a = -0.25
+set mass = $4
+set ns = $5
+set nt = $6 
+set binar =  /nfs/beowulf02/schaich/milc/v7/mcrg_blocking/su3_mcrg
+set label = 12
+set low = $7
+
+
+
+set home_dir = /amd/huron/axp/huron/wrk1/ltm/gregpetrop/Research/SU3_NF12_MCRG
+
+cd $home_dir
+
+#csh \
+Qsub -e -G beowulf -N M${beta}_$count -o Log/log${ns}${nt}_${beta}_${mass}_${label}.$count \
+ run_mcrg $count $last $beta $beta_a $mass $binar $ns $nt $label $low
+
+
+
+exit
+

@@ -1,0 +1,10 @@
+#This file serves as a converstion between subdirectories that store all the measurments for a given alpha value and the alpha values that it contains
+#Each line reads [subdirectory] [number of alpha's in run] [alpha value 1] [alpha value 2] [alpha value...]
+#The sub directory naming convention is as follows:  [number of alpha]_[first alpha]_[last alpha]
+3_0.5_0.7 0.5 0.6 0.7
+5_0.3_0.7 0.3 0.4 0.5 0.6 0.7
+10_0.46_0.64 0.46 0.48 0.5 0.52 0.54 0.56 0.58 0.6 0.62 0.64
+8_0.20_0.48 0.2 0.24 0.28 0.32 0.36 0.4 0.44 0.48
+4_0.56_0.62 0.56 0.58 0.6 0.62
+21_0.200_0.700 0.2 0.225 0.25 0.275 0.3 0.325 0.35 0.375 0.4 0.425 0.45 0.475 0.5 0.525 0.55 0.575 0.6 0.625 0.65 0.675 .7
+16_0.300_0.675 0.3 0.325 0.35 0.375 0.4 0.425 0.45 0.475 0.5 0.525 0.55 0.575 0.6 0.625 0.65 0.675

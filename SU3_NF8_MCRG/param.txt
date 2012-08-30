@@ -1,0 +1,50 @@
+#This file contains all the parameters required to run analysis code in useful
+#regions of phase space
+#-----
+#begin nsnt mass
+#fundamental_beta t_start t_max t_step start_type
+#end
+#-----
+begin 612 0.02
+beta 5.0 50 201 10 high
+beta 5.1 50 201 10 high
+beta 5.2 50 201 10 high
+beta 5.3 50 201 10 high
+beta 5.4 50 201 10 high
+beta 5.5 50 201 10 high
+beta 5.6 50 201 10 high
+beta 5.7 50 201 10 high
+beta 5.8 50 201 10 high
+beta 5.9 50 201 10 high
+beta 6.0 50 201 10 high
+beta 6.1 50 201 10 high
+beta 6.2 50 201 10 high
+beta 6.3 50 201 10 high
+beta 6.4 50 201 10 high
+beta 6.5 50 201 10 high
+beta 6.6 50 201 10 high
+beta 6.7 50 201 10 high
+beta 6.8 50 201 10 high
+beta 6.9 50 201 10 high
+beta 7.0 50 201 10 high
+#-----
+begin 1224 0.01
+beta 4.9 50 201 10 mix
+beta 5.0 50 201 10 mix
+beta 5.2 50 201 10 mix
+beta 5.4 50 201 10 mix
+beta 5.6 50 201 10 mix
+beta 5.8 50 201 10 mix
+beta 6.0 50 201 10 mix
+beta 6.2 50 201 10 mix
+beta 6.4 50 201 10 mix
+beta 6.6 50 201 10 mix
+beta 6.8 50 201 10 mix
+beta 7.0 50 201 10 mix
+#-----
+begin 2448 0.0025
+beta 5.4 30 60 1 low
+beta 5.6 30 60 1 low
+beta 6.0 30 60 1 low
+beta 7.0 50 101 1 low
+#-----

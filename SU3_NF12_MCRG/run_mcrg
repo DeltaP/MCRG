@@ -1,0 +1,88 @@
+#!/bin/csh -f
+#version calls an new qsub
+set count = $1
+set last = $2
+set beta = $3
+set beta_a = $4
+set mass = $5
+set binary = $6
+set ns = $7
+set nt = $8
+set label = $9
+set low = $10
+
+#  We will copy everything big to $BATCH_TMPDIR
+
+limit core 0
+
+set mynode = ` hostname -s `
+
+
+
+
+
+set kind = ${ns}${nt}_${beta}_${mass}_${label}
+
+set exec_dir = /nfs/beowulf02/anna2/KSNHYP/FA-ks481216
+set home_dir = /nfs/beowulf02/greg/SU3_NF12_MCRG/
+
+set gauge_dir = \
+${exec_dir}/Run_new${label}_${ns}${nt}/Configs
+
+set output = ${home_dir}/5_0.3_0.7/mcrg_${low}_${ns}${nt}_${beta}_${mass}.${count}
+
+
+set exec_file_f = $binary
+
+
+
+date >>$output
+
+set ncpus = `cat /proc/cpuinfo | grep -c processor`
+#echo running $ncpus nodes
+
+/usr/local/mpich2-1.4.1p1/bin/mpirun -np  $ncpus  \
+$exec_file_f << EOF  >> $output
+prompt 0
+nx $ns
+ny $ns
+nz $ns
+nt $nt
+
+alpha_hyp1 0.2
+alpha_hyp2 0.2
+num_alpha 5
+alpha_mcrg 0.3
+alpha_mcrg 0.4
+alpha_mcrg 0.5
+alpha_mcrg 0.6
+alpha_mcrg 0.7
+reload_serial ${gauge_dir}/gauge_${ns}${nt}_${beta}_${beta_a}_${mass}_${low}.${count}
+EOF
+
+
+date >>$output
+while ( $count < $last)
+
+        @ counter = $count + 1
+
+
+csh $home_dir/do_mcrg $counter $last $beta $mass $ns $nt $low
+
+@ count = $last + 1
+
+end
+
+
+echo Groom
+
+# try to groom
+
+rm ttb
+ps -ef | grep anna | grep $binary | awk '{print "kill -9  ",$2}' >>ttb
+sh ./ttb
+
+
+
+exit
+

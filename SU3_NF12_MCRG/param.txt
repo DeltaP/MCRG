@@ -1,0 +1,144 @@
+#This file contains all the parameters required to run analysis code in useful
+#regions of phase space
+#-----
+#begin nsnt mass
+#fundamental_beta t_start t_max t_step start_type
+#end
+#-----
+begin 612 0.02
+beta 2.7 50 200 10 high
+beta 2.8 50 200 10 high
+beta 2.9 50 200 10 high
+beta 3.0 50 200 10 high
+beta 3.1 50 200 10 high
+beta 3.2 50 200 10 high
+beta 3.3 50 200 10 high
+beta 3.4 50 200 10 high
+beta 3.5 50 200 10 high
+beta 3.6 50 200 10 high
+beta 3.7 50 200 10 high
+beta 3.8 50 200 10 high
+beta 3.9 50 200 10 high
+beta 4.0 50 200 10 high
+beta 4.1 50 200 10 high
+beta 4.2 50 200 10 high
+beta 4.3 50 200 10 high
+beta 4.4 50 200 10 high
+beta 4.5 50 200 10 high
+beta 4.6 50 200 10 high
+beta 4.7 50 200 10 high
+beta 4.8 50 200 10 high
+beta 4.9 50 200 10 high
+beta 4.0 50 200 10 high
+beta 5.0 50 200 10 high
+beta 5.1 50 200 10 high
+beta 5.2 50 200 10 high
+beta 5.3 50 200 10 high
+beta 5.4 50 200 10 high
+beta 5.5 50 200 10 high
+beta 5.6 50 200 10 high
+beta 5.7 50 200 10 high
+beta 5.8 50 200 10 high
+beta 5.9 50 200 10 high
+beta 6.0 50 200 10 high
+beta 6.1 50 200 10 high
+beta 6.2 50 200 10 high
+beta 6.3 50 200 10 high
+beta 6.4 50 200 10 high
+beta 6.5 50 200 10 high
+beta 6.6 50 200 10 high
+beta 6.7 50 200 10 high
+beta 6.8 50 200 10 high
+beta 6.9 50 200 10 high
+beta 7.0 50 200 10 high
+beta 7.1 50 200 10 high
+beta 7.2 50 200 10 high
+beta 7.3 50 200 10 high
+beta 7.4 50 200 10 high
+beta 7.5 50 200 10 high
+beta 7.6 50 200 10 high
+beta 7.7 50 200 10 high
+beta 7.8 50 200 10 high
+beta 7.9 50 200 10 high
+beta 8.0 50 200 10 high
+beta 8.1 50 200 10 high
+beta 8.2 50 200 10 high
+beta 8.3 50 200 10 high
+beta 8.4 50 200 10 high
+beta 8.5 50 200 10 high
+beta 8.6 50 200 10 high
+beta 8.7 50 200 10 high
+beta 8.8 50 200 10 high
+beta 8.9 50 200 10 high
+beta 9.0 50 200 10 high
+beta 9.1 50 200 10 high
+beta 9.2 50 200 10 high
+beta 9.3 50 200 10 high
+beta 9.4 50 200 10 high
+beta 9.5 50 200 10 high
+beta 9.6 50 200 10 high
+beta 9.7 50 200 10 high
+beta 9.8 50 200 10 high
+beta 9.9 50 200 10 high
+beta 10.0 50 200 10 high
+beta 10.1 50 200 10 high
+beta 10.2 50 200 10 high
+beta 10.3 50 200 10 high
+beta 10.4 50 200 10 high
+beta 10.5 50 200 10 high
+beta 10.6 50 200 10 high
+#-----
+begin 1224 0.01
+beta 2.7 50 200 10 mix
+beta 2.8 50 200 10 mix
+beta 2.9 50 200 10 high
+beta 3.0 50 200 10 high
+beta 3.1 50 200 10 high
+beta 3.2 50 200 10 high
+beta 3.6 50 200 10 high
+beta 3.8 50 200 10 high
+beta 4.0 50 200 10 high
+beta 4.2 50 200 10 high
+beta 4.4 50 200 10 high
+beta 4.6 50 200 10 high
+beta 4.8 50 200 10 high
+beta 5.0 50 200 10 high
+beta 5.2 50 200 10 high
+beta 5.4 50 200 10 high
+beta 5.6 50 200 10 high
+beta 5.8 50 200 10 high
+beta 6.0 50 200 10 high
+beta 6.2 50 200 10 high
+beta 6.4 50 200 10 high
+beta 6.6 50 200 10 high
+beta 6.8 50 200 10 high
+beta 7.0 50 200 10 high
+beta 7.2 50 200 10 high
+beta 7.4 50 200 10 high
+beta 7.6 50 200 10 high
+beta 7.8 50 200 10 high
+beta 8.0 50 200 10 high
+beta 8.2 50 200 10 high
+beta 8.4 50 200 10 high
+beta 8.6 50 200 10 high
+beta 8.8 50 200 10 high
+beta 9.0 50 200 10 high
+beta 9.2 50 200 10 high
+beta 9.4 50 200 10 high
+beta 9.6 50 200 10 high
+beta 9.8 50 200 10 high
+beta 10.0 50 200 10 high
+beta 10.2 50 200 10 high
+beta 10.4 50 200 10 high
+beta 10.6 50 200 10 high
+beta 10.8 50 200 10 high
+#-----
+begin 2448 0.0025
+beta 4.0  50 101 1 low
+beta 5.0  50 101 1 low
+beta 6.0  50 101 1 low
+beta 7.0  50 101 1 low
+beta 8.0  50 101 1 low
+beta 9.0  50 101 1 low
+beta 10.0  50 101 1 low
+#-----
